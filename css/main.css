@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
+img { 
+    vertical-align: middle; 
+}
+
+#navbar {
+  background-color:#000;
+  text-align: center;
+  height:45px;
+}
+
+#navbar button{
+	margin-top:10px;
+}
+
+#lunchArea {
+  width:100%;
+  text-align: center;
+}
+
+.userPictureDiv {
+	display:inline-block;
+	-webkit-transition: all 2s ease, height 2s ease;  
+    -moz-transition: all 2s ease, height 2s ease;  
+    -o-transition: all 2s ease, height 2s ease;  
+    -ms-transition: all 2s ease, height 2s ease;  
+    transition: all 2s ease, height 2s ease;
+}
+
+.userPictureDiv_enabled {
+	background-color: #ff9434;
+}
+
+.userPictureDiv_disabled {
+	background-color: #aaa;
+	-webkit-opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+
+.userPictureImg_disabled {	
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1);
+    opacity: .7; /* fallback */
+}
+
+.userPicture_p {
+	position: absolute;
+	font-weight:bold;
+	color:#000;
+	text-align:center;
+	-webkit-opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter:alpha(opacity=70);
+	-webkit-transition: all 2s ease, height 2s ease;  
+    -moz-transition: all 2s ease, height 2s ease;  
+    -o-transition: all 2s ease, height 2s ease;  
+    -ms-transition: all 2s ease, height 2s ease;  
+    transition: all 2s ease, height 2s ease;	
+}
+
+.userPicture_p_enabled {
+	background-color: #ffcc6a;
+}
+.userPicture_p_disabled {
+	background-color: #aaa;
+}
